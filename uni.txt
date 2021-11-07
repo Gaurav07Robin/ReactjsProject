@@ -1,0 +1,120 @@
+const fname = "robin";
+const lname = "gaurav";
+const dt = new Date().toLocaleDateString();
+var tm = new Date().toLocaleTimeString();
+const img1="https://picsum.photos/400/300"
+const img2="https://picsum.photos/200/300"
+const link = "https://www.udemy.com"
+
+/*
+justify-content: center;
+  display: flex;
+  margin: 10px 0px; 
+  font-size: large;
+  color:skyblue;
+  font-family: 'Times New Roman', Times, serif;
+*/
+const heading = {
+  color: "red",
+  textTransform: "capitalize",
+  textAlign: "center",
+  fontFamily: "'Times New Roman', Times, serif",
+  textShadow: "0px 10px skyblue"
+};
+
+ReactDOM.render(
+  <React.Fragment>
+<h1 contentEditable><b>{`Thapa Technical Netflix Pack made by ${fname} ${lname}`}</b></h1>
+<p className="new" style={heading}>
+  My name is Robin
+  
+</p>
+<div className="img_n">
+<img src={img1} alt="randomImages"/>
+<img src={img2} alt="randomImages2"/>
+<a href={link}>
+<img src={img1} alt="randomImages" target="_udemy"></img>
+  </a>
+  </div>
+
+
+</React.Fragment>,
+  document.getElementById("root")
+  );
+
+    /*
+  var h1 = document.createElement("h1");
+  h1.innerHTML = "robin";
+  document.getElementById("root").appendChild(h1);
+  */
+
+  /*
+  import "./index.css"
+
+let currDate = new Date(2020,5,5, 20);
+currDate = currDate.getHours();
+let greeting = '';
+const clcol = {};
+
+if(currDate >= 1 && currDate < 12){
+  greeting = 'Good Morning'
+  clcol.color = 'green';
+}
+if(currDate >= 12 && currDate < 19){
+  greeting = 'Good Afternoon'
+  clcol.color = 'yellow';
+}
+if(currDate >= 19 && currDate <= 24){
+  greeting = 'Good Night'
+  clcol.color = 'black';
+}
+<h1>Hello Sir,<span style={clcol}> {greeting} </span></h1>
+  */
+
+  /*
+  import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+  */
+
+/*
+  <>
+  <h1 className="heading_style">Top 5 Netflix Series</h1>
+  {Sdata.map((val) => {
+   
+    return( 
+      <Card
+        key = {val.id}
+        imgsrc={val.imgsrc}
+        title={val.title}
+        sname={val.sname}
+        link={val.link}
+      />
+    )
+  })}
+ 
+  </>
+  */
